@@ -1,0 +1,13 @@
+.header { background-color: cyan; }
+
+.header-2 { background-color: #2836ff; }
+
+.footer {
+    background-color:  #2836ff;
+    color: lightcyan;
+}
+
+.footer-p {
+    text-align: center;
+    font-size: 0.8em;
+}
