@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link 
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
         rel="stylesheet" 
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" 
         crossorigin="anonymous"
     >
+    <link rel="stylesheet" href="style.css">
     <title>Carangos Top</title>
 </head>
 <body>
@@ -20,14 +20,32 @@
                 <img src="logo.png" width="120px" height="70px">
             </div>
         </div>
-        <nav class="header-2 p-2">
+        <nav class="header-2 py-3">
             <div class="container">
                 <div class="row">
                     <div class="col-6">
-                        <a class="header-2" href="carangos-top-bootstrap.html"> Inicial </a>
-                        <a class="header-2" href="produtos-bootstrap.html"> Produtos </a>
-                        <a class="header-2" href="quem-somos-bootstrap.html"> Quem Somos </a>
-                        <a class="header-2" href="fale-conosco-bootstrap.html"> Fale Conosco </a>
+                        <ul class="list-unstyled list-inline m-0">
+                            <li class="list-inline-item px-3"> 
+                                <a href="carangos-top-bootstrap.html">
+                                    Inicial
+                                </a>
+                            </li>
+                            <li class="list-inline-item px-3">
+                                <a href="produtos-bootstrap.html">
+                                    Produtos
+                                </a>
+                            </li>
+                            <li class="list-inline-item px-3">
+                                <a href="quem-somos-bootstrap.html">
+                                    Quem Somos
+                                </a>
+                            </li>
+                            <li class="list-inline-item px-3">
+                                <a href="fale-conosco-bootstrap.html">
+                                    Fale Conosco 
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                     <div class="col-6 text-end">
                         <a href="carrinho-de-compras-bootstrap.html">
@@ -40,87 +58,50 @@
     </header>
     <main>
         <section>
-            <div class="container">
-                <img class="container-1" src="principal-css.jpeg" width="100%" height="400px">
+            <div class="container my-4">
+                <img  class="w-100" src="principal-bst.jpeg">
             </div>
         </section>
         <section>
-            <div class="container">
-                <h1> Destaques </h1>
+            <div class="container mb-5">
                 <div class="row">
-                    <div class="destaque">
-                        <div class="destaque-estilo">
-                            <a href="produtos-bootstrap.html">   
-                                <img 
-                                    src="bmw-x1.jpeg" 
-                                    width="100%" 
-                                    height="250"
-                                >
+                    <div class="col">
+                        <h1 class="my-4"> Destaques </h1>
+                    </div>
+                    <div class="col text-end my-4">
+                        <a href="produtos-bootstrap.html" class="btn btn-primary fs-5">Ver Todos</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card" style="width: 100%;">
+                            <a href="produto-selecionado-bootstrap.html">
+                                <img src="bmw-x1.jpeg" class="card-img-top">
                             </a>
-                            <div class="p-15">
-                                <h2 class="destaque-1"> 
-                                    <a 
-                                        class="text-white" 
-                                        href="produtos-bootstrap.html"
-                                    >
-                                        Bmw X1
-                                    </a>
-                                </h2>
-                                <p class="destaque-1">R$ 450.000,00</p>
-                                <a 
-                                    class="button" 
-                                    href="produtos-bootstrap.html"
-                                >   
-                                    Detalhes
-                                </a>
+                            <div class="card-body text-center detalhe">
+                                <h2 class="card-title">BMW X1</h2>
+                                <p class="card-text fs-5">R$ 450.000,00</p>
+                                <a href="produto-selecionado-bootstrap.html" class="btn btn-primary">Detalhes</a>
                             </div>
                         </div>
                     </div>
-                    <div class="destaque">
-                        <div class="destaque-estilo">
-                            <a 
-                                href="produtos-bootstrap.html">
-                                <img 
-                                    src="ferrari-458-speciale.jpg" 
-                                    width="100%" 
-                                    height="250"
-                                >
-                                </a>
-                            <div class="p-15">
-                                <h2 class="destaque-1">
-                                    <a 
-                                        class="text-white" 
-                                        href="produtos-bootstrap.html"
-                                    >
-                                        Ferrari 458 Speciale
-                                    </a>    
-                                </h2>
-                                <p class="destaque-1">R$ 950.000,00</p>
-                                <a class="button" href="produtos-bootstrap.html" >Detalhes</a>
+                    <div class="col">
+                        <div class="card" style="width: 100%;">
+                            <img src="ferrari-458-speciale.jpg" class="card-img-top">
+                            <div class="card-body text-center detalhe">
+                                <h2 class="card-title">Ferrari 458 Speciale</h2>
+                                <p class="card-text fs-5">R$ 950.000,00</p>
+                                <a class="btn btn-primary">Detalhes</a>
                             </div>
                         </div>
                     </div>
-                    <div class="destaque">
-                        <div class="destaque-estilo">
-                            <a 
-                                href="produtos-bootstrap.html">
-                                <img 
-                                    src="lamborghini-huracan.jpg" 
-                                    width="100%" 
-                                    height="250"
-                                >
-                                </a>
-                            <div class="p-15">
-                                <h2 class="destaque-1">
-                                    <a 
-                                        class="text-white" 
-                                        href="produtos-bootstrap.html"
-                                    >
-                                        Lamborghini Huracán
-                                    </a>
-                                </h2>
-                                <p class="destaque-1">R$ 1.450.000,00</p>
-                                <a class="button" href="produtos-bootstrap.html" >Detalhes</a>
+                    <div class="col">
+                        <div class="card" style="width: 100%;">
+                            <img src="lamborghini-huracan.jpg" class="card-img-top">
+                            <div class="card-body text-center detalhe">
+                                <h2 class="card-title">Lamborghini Huracán</h2>
+                                <p class="card-text fs-5">R$ 1.450.000,00</p>
+                                <a class="btn btn-primary">Detalhes</a>
                             </div>
                         </div>
                     </div>
@@ -132,24 +113,36 @@
         <div class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="insta">
+                    <div class="col-6">
                         <img src="logo.png" width="150px" height="90px">
                         <nav class="header-2">
-                            <a href="carangos-top-bootstrap.html"> 
+                            <a  
+                                class="link-light text-decoration-none"
+                                href="carangos-top-bootstrap.html"
+                            > 
                                 <p>Inicial</p>
                             </a>
-                            <a href="produtos-bootstrap.html"> 
+                            <a 
+                                class="link-light text-decoration-none"
+                                href="produtos-bootstrap.html"
+                            > 
                                 <p>Produtos</p>
                             </a>
-                            <a  href="quem-somos-bootstrap.html">
+                            <a 
+                                class="link-light text-decoration-none"
+                                href="quem-somos-bootstrap.html"
+                            >
                                 <p>Quem Somos</p>
                             </a>
-                            <a href="fale-conosco-bootstrap.html">
+                            <a 
+                                class="link-light text-decoration-none"
+                                href="fale-conosco-bootstrap.html"
+                            >
                                 <p>Fale Conosco</p>
                             </a>
                         </nav>
                     </div>
-                    <div class="face">
+                    <div class="col-6 text-end mt-2">
                         <a href="https://www.instagram.com/" target="_blank">
                             <img src="insta.png" width="30px" height="30px">
                         </a>
@@ -161,7 +154,7 @@
             </div>
         </div>
         <div class="header">
-            <p class="footer-p p-15">Produzido por Diego Cabral</p>
+            <p class="footer-p p-2">Produzido por Diego Cabral</p>
         </div>
     </footer>
     

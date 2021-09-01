@@ -1,3 +1,10 @@
+html, body { background-color: powderblue; }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .header { background-color: cyan; }
 
 .header-2 { background-color: #2836ff; }
@@ -10,4 +17,8 @@
 .footer-p {
     text-align: center;
     font-size: 0.8em;
+}
+
+.detalhe {
+    background-color: powderblue;
 }
