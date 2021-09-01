@@ -4,29 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=C:\Users\Diego\Desktop\estudo\projeto\css\style.css>
-    <title>Produtos</title>
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" 
+        crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="style.css">
+    <title>Carangos Top</title>
 </head>
 <body>
     <header>
-        <div class="header">
+        <div class="header p-2">
             <div class="container">
-                <a href="carangos-top-css.html">
-                    <img src="logo.png" width="120px" height="70px">
-                </a>
+                <img src="logo.png" width="120px" height="70px">
             </div>
         </div>
-        <nav class="header-2">
+        <nav class="header-2 py-3">
             <div class="container">
                 <div class="row">
-                    <div class="insta">
-                        <a class="header-2" href="carangos-top-css.html"> Inicial </a>
-                        <a class="header-2" href="produtos-css.html"> Produtos </a>
-                        <a class="header-2" href="quem-somos-css.html"> Quem Somos </a>
-                        <a class="header-2" href="fale-conosco-css.html"> Fale Conosco </a>
+                    <div class="col-6">
+                        <ul class="list-unstyled list-inline m-0">
+                            <li class="list-inline-item px-3"> 
+                                <a class="text-decoration-none link-light" href="carangos-top-bootstrap.html">
+                                    Inicial
+                                </a>
+                            </li>
+                            <li class="list-inline-item px-3">
+                                <a class="text-decoration-none link-light" href="produtos-bootstrap.html">
+                                    Produtos
+                                </a>
+                            </li>
+                            <li class="list-inline-item px-3">
+                                <a class="text-decoration-none link-light" href="quem-somos-bootstrap.html">
+                                    Quem Somos
+                                </a>
+                            </li>
+                            <li class="list-inline-item px-3">
+                                <a class="text-decoration-none link-light" href="fale-conosco-bootstrap.html">
+                                    Fale Conosco 
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="face">
-                        <a href="carrinho-de-compras-css.html">
+                    <div class="col-6 text-end">
+                        <a class="text-decoration-none link-light" href="carrinho-de-compras-bootstrap.html">
                             <img src="carrodecompra.png" width="50px">
                         </a>
                     </div>
@@ -36,112 +58,118 @@
     </header>
     <main>
         <section>
-            <div class="container">
-                <a href="carangos-top-css.html">Página Inicial</a>  
-                <span>/ Produtos</span>
+            <div class="container my-4">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="carangos-top-bootstrap.html">Página Inicial</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Produtos</li>
+                    </ol>
+                </nav>
             </div>
         </section>
-        <div class="container">
-            <div class="row">
-                <div class="destaque">
-                    <div class="destaque-estilo">
-                        <a href="produto-selecionado-css.html">   
-                            <img src="bmw-x1.jpeg" width="100%" height="250">
-                        </a>
-                        <div class="p-15">
-                            <h2> 
-                                <a href="produto-selecionado-css.html">
-                                    Bmw X1
-                                </a>
-                            </h2>
-                            <p class="p-15">R$ 450.000,00</p>
-                            <a class="button" href="produto-selecionado-css.html">   
-                                Detalhes
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card" style="width: 100%;">
+                            <a href="produto-selecionado-bootstrap.html">
+                                <img src="bmw-x1.jpeg" class="card-img-top">
                             </a>
-                        </div>
-                    </div>    
-                </div>
-                <div class="destaque">
-                    <div class="destaque-estilo">
-                        <img src="ferrari-458-speciale.jpg" width="100%" height="250">
-                        <div class="p-15">
-                            <h2>Ferrari 458 Speciale</h2>
-                            <p class="p-15">R$ 950.000,00</p>
-                            <a class="button">Detalhes</a>
+                            <div class="card-body text-center detalhe">
+                                <h2 class="card-title">BMW X1</h2>
+                                <p class="card-text fs-5">R$ 450.000,00</p>
+                                <a href="produto-selecionado-bootstrap.html" class="btn btn-primary">Detalhes</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="destaque">
-                    <div class="destaque-estilo">
-                        <img src="lamborghini-huracan.jpg" width="100%" height="250">
-                        <div class="p-15">
-                            <h2>Lamborghini Huracán</h2>
-                            <p class="p-15">R$ 1.450.000,00</p>
-                            <a class="button">Detalhes</a>
+                    <div class="col-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="ferrari-458-speciale.jpg" class="card-img-top">
+                            <div class="card-body text-center detalhe">
+                                <h2 class="card-title">Ferrari 458 Speciale</h2>
+                                <p class="card-text fs-5">R$ 950.000,00</p>
+                                <a class="btn btn-primary">Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="lamborghini-huracan.jpg" class="card-img-top">
+                            <div class="card-body text-center detalhe">
+                                <h2 class="card-title">Lamborghini Huracán</h2>
+                                <p class="card-text fs-5">R$ 1.450.000,00</p>
+                                <a class="btn btn-primary">Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 my-5">
+                        <div class="card" style="width: 100%;">
+                            <img src="mclaren-720s.jpg" class="card-img-top">
+                            <div class="card-body text-center detalhe">
+                                <h2 class="card-title">McLaren 720s</h2>
+                                <p class="card-text fs-5">R$ 1.150.000,00</p>
+                                <a class="btn btn-primary">Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 my-5">
+                        <div class="card" style="width: 100%;">
+                            <img src="mercedes-amg.jpg" class="card-img-top">
+                            <div class="card-body text-center detalhe">
+                                <h2 class="card-title">Mercedes AMG</h2>
+                                <p class="card-text fs-5">R$ 450.000,00</p>
+                                <a class="btn btn-primary">Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 my-5">
+                        <div class="card" style="width: 100%;">
+                            <img src="audi-r8.jpg" class="card-img-top">
+                            <div class="card-body text-center detalhe">
+                                <h2 class="card-title">Audi R8</h2>
+                                <p class="card-text fs-5">R$ 1.000.000,00</p>
+                                <a class="btn btn-primary">Detalhes</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="destaque">
-                    <div class="destaque-estilo">
-                        <img src="mclaren-720s.jpg" width="100%" height="250">
-                        <div class="p-15">
-                            <h2>McLaren 720s</h2>
-                            <p class="p-15">R$ 1.150.000,00</p>
-                            <a class="button">Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="destaque">
-                    <div class="destaque-estilo">
-                        <img src="mercedes-amg.jpg" width="100%" height="250">
-                        <div class="p-15">
-                            <h2>Mercedes AMG</h2>
-                            <p class="p-15">R$ 450.000,00</p>
-                            <a class="button">Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="destaque">
-                    <div class="destaque-estilo">
-                        <img src="audi-r8.jpg" width="100%" height="250">
-                        <div class="p-15">
-                            <h2>Audi R8</h2>
-                            <p class="p-15">R$ 1.000.000,00</p>
-                            <a class="button">Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
     </main>
     <footer>
         <div class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="insta">
-                        <a href="carangos-top-css.html">
-                            <img src="logo.png" width="120px" height="70px">
-                        </a>
+                    <div class="col-6">
+                        <img src="logo.png" width="150px" height="90px">
                         <nav class="header-2">
-                            <a href="carangos-top-css.html"> 
+                            <a  
+                                class="link-light text-decoration-none"
+                                href="carangos-top-bootstrap.html"
+                            > 
                                 <p>Inicial</p>
                             </a>
-                            <a href="produtos-css.html"> 
+                            <a 
+                                class="link-light text-decoration-none"
+                                href="produtos-bootstrap.html"
+                            > 
                                 <p>Produtos</p>
                             </a>
-                            <a  href="quem-somos-css.html">
+                            <a 
+                                class="link-light text-decoration-none"
+                                href="quem-somos-bootstrap.html"
+                            >
                                 <p>Quem Somos</p>
                             </a>
-                            <a href="fale-conosco-css.html">
+                            <a 
+                                class="link-light text-decoration-none"
+                                href="fale-conosco-bootstrap.html"
+                            >
                                 <p>Fale Conosco</p>
                             </a>
                         </nav>
                     </div>
-                    <div class="face">
+                    <div class="col-6 text-end mt-2">
                         <a href="https://www.instagram.com/" target="_blank">
                             <img src="insta.png" width="30px" height="30px">
                         </a>
@@ -153,9 +181,15 @@
             </div>
         </div>
         <div class="header">
-            <p class="footer-p p-15">Produzido por Diego Cabral</p>
+            <p class="footer-p p-2">Produzido por Diego Cabral</p>
         </div>
     </footer>
-    
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" 
+        crossorigin="anonymous"
+    >
+    </script>
+
 </body>
 </html>
