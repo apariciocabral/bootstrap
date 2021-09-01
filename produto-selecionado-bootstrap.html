@@ -4,29 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=C:\Users\Diego\Desktop\estudo\projeto\css\style.css>
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" 
+        crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="style.css">
     <title>Produto Selecionado</title>
 </head>
 <body>
     <header>
-        <div class="header">
+        <div class="header p-2">
             <div class="container">
-                <a href="carangos-top-css.html">
-                    <img src="logo.png" width="120px" height="70px">
-                </a>
+                <img src="logo.png" width="120px" height="70px">
             </div>
         </div>
-        <nav class="header-2">
+        <nav class="header-2 py-3">
             <div class="container">
                 <div class="row">
-                    <div class="insta">
-                        <a class="header-2" href="carangos-top-css.html"> Inicial </a>
-                        <a class="header-2" href="produtos-css.html"> Produtos </a>
-                        <a class="header-2" href="quem-somos-css.html"> Quem Somos </a>
-                        <a class="header-2" href="fale-conosco-css.html"> Fale Conosco </a>
+                    <div class="col-6">
+                        <ul class="list-unstyled list-inline m-0">
+                            <li class="list-inline-item px-3"> 
+                                <a class="text-decoration-none link-light" href="carangos-top-bootstrap.html">
+                                    Inicial
+                                </a>
+                            </li>
+                            <li class="list-inline-item px-3">
+                                <a class="text-decoration-none link-light" href="produtos-bootstrap.html">
+                                    Produtos
+                                </a>
+                            </li>
+                            <li class="list-inline-item px-3">
+                                <a class="text-decoration-none link-light" href="quem-somos-bootstrap.html">
+                                    Quem Somos
+                                </a>
+                            </li>
+                            <li class="list-inline-item px-3">
+                                <a class="text-decoration-none link-light" href="fale-conosco-bootstrap.html">
+                                    Fale Conosco 
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="face">
-                        <a href="carrinho-de-compras-css.html">
+                    <div class="col-6 text-end">
+                        <a class="text-decoration-none link-light" href="carrinho-de-compras-bootstrap.html">
                             <img src="carrodecompra.png" width="50px">
                         </a>
                     </div>
@@ -36,21 +58,25 @@
     </header>
     <main>
         <section>
-            <div class="container">
-                <a href="carangos-top-css.html">Página Inicial</a> 
-                <a href="produtos-css.html">/ Produtos</a>
-                <span>/ Produto Selecionado</span>
+            <div class="container my-4">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="carangos-top-bootstrap.html">Página Inicial</a></li>
+                    <li class="breadcrumb-item"><a href="produtos-bootstrap.html">Produtos</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Produto Selecionado</li>
+                    </ol>
+                </nav>
             </div>
         </section>
         <section>
             <div class="container">
                 <div class="row">
                    <div class="col-6">
-                        <h2 class="p-15">BMW X1</h2>
-                        <img src="bmw-x1.jpeg" width="100%">
+                        <h2 class="text-center mt-3">BMW X1</h2>
+                        <img class="w-100 p-3" src="bmw-x1.jpeg">
                     </div>
-                    <div class="col-6 p-15">
-                        <p class="tajust"> O BMW X1 nasceu em 2009 como uma proposta 
+                    <div class="col-6 m-auto text-center">
+                        <p class="text-justify mt-4"> O BMW X1 nasceu em 2009 como uma proposta 
                             de sport utility vehicle (SAV) na concepção da marca 
                             alemã, complementando a linha de utilitários esportivos 
                             da marca, que começou no final dos anos 90 com o X5, passando pelo X3 e depois 
@@ -70,18 +96,20 @@
                             seis cilindros em linha, aproveitando ao máximo a gama de 
                             powertrains da empresa, embora nunca tenha recebido um V8.
                         </p>
-                        <p class="p-15">
-                            <a
+                            <p class="text-center">
+                                <a
+                                class="text-decoration-none link-danger fw-bold"    
                                 href="https://www.noticiasautomotivas.com.br/bmw-x1/" 
-                                target="_blank"
-                            >
-                                Clique aqui
-                            </a> 
+                                    target="_blank"
+                                >
+                                    Clique aqui
+                                </a> 
+
                             para saber mais desta máquina!
                         </p>
-                        <p class="p-15">R$ 450.000,00</p>
-                        <a href="carrinho-de-compras-css.html">
-                            <button class="button destaque" type="submit">Comprar</button>
+                        <p class="my-2 text-center fs-4">R$ 450.000,00</p>
+                        <a href="carrinho-de-compras-bootstrap.html">
+                            <button class="btn btn-primary fs-5 mb-4" type="submit">Comprar</button>
                         </a>
                     </div>
                 </div>
@@ -92,26 +120,36 @@
         <div class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="insta">
-                        <a href="carangos-top-css.html">
-                            <img src="logo.png" width="120px" height="70px">
-                        </a>
+                    <div class="col-6">
+                        <img src="logo.png" width="150px" height="90px">
                         <nav class="header-2">
-                            <a href="carangos-top-css.html"> 
+                            <a  
+                                class="link-light text-decoration-none"
+                                href="carangos-top-bootstrap.html"
+                            > 
                                 <p>Inicial</p>
                             </a>
-                            <a href="produtos-css.html"> 
+                            <a 
+                                class="link-light text-decoration-none"
+                                href="produtos-bootstrap.html"
+                            > 
                                 <p>Produtos</p>
                             </a>
-                            <a  href="quem-somos-css.html">
+                            <a 
+                                class="link-light text-decoration-none"
+                                href="quem-somos-bootstrap.html"
+                            >
                                 <p>Quem Somos</p>
                             </a>
-                            <a href="fale-conosco-css.html">
+                            <a 
+                                class="link-light text-decoration-none"
+                                href="fale-conosco-bootstrap.html"
+                            >
                                 <p>Fale Conosco</p>
                             </a>
                         </nav>
                     </div>
-                    <div class="face">
+                    <div class="col-6 text-end mt-2">
                         <a href="https://www.instagram.com/" target="_blank">
                             <img src="insta.png" width="30px" height="30px">
                         </a>
@@ -123,9 +161,14 @@
             </div>
         </div>
         <div class="header">
-            <p class="footer-p p-15">Produzido por Diego Cabral</p>
+            <p class="footer-p p-2">Produzido por Diego Cabral</p>
         </div>
     </footer>
-    
+    <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" 
+    crossorigin="anonymous"
+>
+</script>
 </body>
 </html>
