@@ -4,6 +4,8 @@ html, body { background-color: powderblue; }
 
 .header-2 { background-color: #2836ff; }
 
+.text-justify { text-align: justify; }
+
 .footer {
     background-color:  #2836ff;
     color: lightcyan;
