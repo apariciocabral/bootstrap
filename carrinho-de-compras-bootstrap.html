@@ -11,7 +11,7 @@
         crossorigin="anonymous"
     >
     <link rel="stylesheet" href="style.css">
-    <title>Fale Conosco</title>
+    <title>Carrinho de Compras</title>
 </head>
 <body>
     <header>
@@ -62,69 +62,49 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="carangos-top-bootstrap.html">Página Inicial</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Fale Conosco</li>
+                    <li class="breadcrumb-item"><a href="produtos-bootstrap.html">Produtos</a></li>
+                    <li class="breadcrumb-item"><a href="produto-selecionado-bootstrap.html">Produto Selecionado</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Carrinho de Compras</li>
                     </ol>
                 </nav>
             </div>
         </section>
         <section>
-            <div class="container mb-5">
-                <form class="row">
-                    <div class="col-12 my-3">
-                        <label for="inputname" class="form-label">Nome</label>
-                        <input type="name" class="form-control" id="inputname" placeholder="Seu Nome">
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-3 m-auto">
+                        <img class="w-100" src="bmw-x1.jpeg">
                     </div>
-                    <div class="col-6 my-3">
-                        <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="seuemail@gmail.com">
+                    <div class="col-3 m-auto text-center fs-4">
+                        <p>BMW X1</p>
+                        <p>xDrive25i Sport</p>
+                        <p>2021/2022</p>
                     </div>
-                    <div class="col-6 my-3">
-                        <label for="inputPassword4" class="form-label">Senha</label>
-                        <input type="password" class="form-control" id="inputPassword4" placeholder="Crie sua senha">
+                    <div class="col-3 m-auto text-center fs-5">
+                        <p>Quantidade</p>
+                        <div>
+                            <input type="number" class="form-control text-center" id="inputnumber" name="quantidade" min="1" value="1">
+                        </div>
                     </div>
-                    <div class="col-6 my-3">
-                        <label for="inputAddress" class="form-label">Endereço</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="Insira seu endereço">
+                    <div class="col-3 m-auto text-end">
+                        <button class="btn btn-primary fs-5 mb-4" type="submit">Comprar</button>
                     </div>
-                    <div class="col-3 my-3">
-                        <label for="inputnumber" class="form-label">Número</label>
-                        <input type="number" class="form-control" id="inputnumber" placeholder="Número da residência">
-                    </div>
-                    <div class="col-3 my-3">
-                        <label for="inputAddress" class="form-label">Bairro</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="Bairro onde mora">
-                    </div>
-                    <div class="col-6 my-3">
-                        <label for="inputCity" class="form-label">Cidade</label>
-                        <input type="text" class="form-control" id="inputCity" placeholder="Cidade onde mora">
-                    </div>
-                    <div class="col-3 my-3">
-                        <label for="inputState" class="form-label">Estado</label>
-                        <input id="inputState" class="form-control" placeholder="Estado onde mora"></input>
-                    </div>
-                    <div class="col-3 my-3">
-                        <label for="inputZip" class="form-label">CEP</label>
-                        <input type="text" class="form-control" id="inputZip" placeholder="123456-789">
-                    </div>
-                    <div class="col-12 my-3">
-                        <label class="mb-3">Mensagem:</label> 
-                        <textarea class="form-control" rows="3"></textarea>
-                    </div>
-                    <div class="col-12 my-5 text-center">
-                        <button type="submit" class="btn btn-primary fs-5">Enviar</button>
-                    </div>
-                </form>
-                <div class="text-center">
-                    <span class="fw-bold fs-4">Endereço</span>
-                    <p class="fs-5">Rua das só carretas, 2021, Centro - Nova Friburgo-RJ <br>CEP: 28621-000</p>
-                    <span class="fw-bold fs-4">Telefone</span>
-                    <p class="fs-4">(22) 2522-2021 / (22) 99234-1234</p>
-                    <span class="fw-bold fs-4">Redes Sociais</span>
-                    <p class="fs-4">@carangostop</p>
                 </div>
             </div>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="text-center">
+                        <a href="produtos-bootstrap.html" class="btn btn-info fs-5 mb-4">Continuar a Compra</a>
+                    </div>
+                </div>
+            </div>
+
+
         </section>
+
+
     </main>
+
     <footer>
         <div class="footer">
             <div class="container">
