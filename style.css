@@ -6,16 +6,4 @@ html, body { background-color: powderblue; }
 
 .text-justify { text-align: justify; }
 
-.footer {
-    background-color:  #2836ff;
-    color: lightcyan;
-}
-
-.footer-p {
-    text-align: center;
-    font-size: 0.8em;
-}
-
-.detalhe {
-    background-color: powderblue;
-}
+.detalhe { background-color: powderblue; }   
